@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/shape_rect_angle_white_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="36dip"
+        android:layout_marginEnd="36dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingTop="16dip"
+                android:paddingBottom="12dip"
+                android:text="待签电子合同"
+                android:textColor="@color/text_blue"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dip"
+                android:padding="10dip"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    <View
+        android:background="@color/divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"/>
+
+    <LinearLayout
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="12dip"
+            android:paddingBottom="12dip"
+            android:text="发现您有"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tvContractNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="12dip"
+            android:paddingBottom="12dip"
+            android:text="份待签署"
+            android:textColor="@color/tv_orange"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="12dip"
+            android:paddingBottom="12dip"
+            android:text="的电子合同."
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContract"
+        android:layout_marginStart="24dip"
+        android:layout_marginEnd="24dip"
+        android:background="@drawable/shape_rect_angle_sky_light_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dip"
+        android:layout_marginEnd="24dip"
+        android:gravity="center"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:text="不签署以上的电子合同，将无法收到对应给谁的款项。"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+    <View
+        android:background="@color/divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:text="点击确定开始签署。"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:gravity="center"
+        android:paddingTop="12dip"
+        android:paddingBottom="12dip"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/shape_rect_angle_sky_blue_bg"
+        android:layout_marginStart="24dip"
+        android:layout_marginEnd="24dip"
+        android:layout_marginBottom="32dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

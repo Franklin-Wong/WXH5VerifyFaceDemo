@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar_layout" />
+
+
+            <com.joanzapata.pdfview.PDFView
+                android:id="@+id/pdfContract"
+                android:layout_marginBottom="12dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dip"
+                android:layout_marginStart="12dip"
+                android:scaleType="fitCenter" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <!--<string name="app_name">Gonghuibao</string>-->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="error_phone_number_field_required">手机号为空</string>
+    <string name="error_invalid_phone_number">请输入11位手机号码</string>
+
+    <string name="project_detail">签约详情</string>
+    <string name="my_project_name">我的签约</string>
+    <string name="signup">注册</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="user_agreement">用户服务协议</string>
+    <string name="my_bank_card">我的银行卡</string>
+    <string name="user_info">个人信息</string>
+    <string name="income">收入明细</string>
+    <string name="add_card">添加银行卡</string>
+    <string name="signup_success">注册成功</string>
+    <string name="face_verify">人脸识别</string>
+    <string name="sign_online">在线签约</string>
+
+
+</resources>

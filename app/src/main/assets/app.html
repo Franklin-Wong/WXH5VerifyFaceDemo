@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+
+   function getMsgFromWeb(){
+      return "这是网页返回的字符串";
+   }
+   function showMsgInAndroid(){
+      var result = client.getMsgFromAndroid("这是网页给的参数");
+      alert(result);
+   }
+   function showAndroidDialog(){
+       client.showMsgFromAndroid("网页要求安卓弹窗");
+   }
+   function showResultToAndroid(){
+    debugger;
+    var result = client.getMsgFromAndroid("这是网页给的参数");
+      alert(result);
+    jsToJava.verifyResult();
+}
+    // 页面加载默认执行
+   window.onload = function(){
+       jsToJava.verifyResult();
+    }
+</script>
+</HEAD>
+  <body οnlοad="load();">
+    </body> 
+</HTML>

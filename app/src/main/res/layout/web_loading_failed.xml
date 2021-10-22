@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/linear_loading"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_centerInParent="true"
+              android:background="@color/bg_gray"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/ll_load_failed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bar_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="16dip"
+                    android:src="@mipmap/ic_web_signal"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dip"
+                    android:text="网络请求失败，请您检查您的网络设置"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="56dip"
+                android:src="@mipmap/ic_web_hint"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dip"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_web_hint_left"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_toRightOf="@id/iv_left"
+                    android:drawablePadding="4dip"
+                    android:gravity="top"
+                    android:text="人类社会乏味的根源是"
+                    android:textColor="@color/bar_grey"
+                    android:textSize="16sp"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dip"
+                android:layout_toRightOf="@+id/tv_hint"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="58dip"
+                    android:gravity="bottom"
+                    android:text="断网了！"
+                    android:textColor="@color/bar_grey"
+                    android:textSize="18sp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="42dip"
+                    android:src="@mipmap/ic_web_hint_right"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_preview_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <!-- 加载时的loading显示，当加载失败会出现重试的按钮 -->
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+            <ProgressBar
+                    android:id="@+id/pb_preview_loading"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:id="@+id/tv_preview_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rect_angle_gray_bg"
+                    android:paddingBottom="6dip"
+                    android:paddingLeft="28dip"
+                    android:paddingRight="28dip"
+                    android:paddingTop="6dip"
+                    android:text="重新加载"
+                    android:textColor="@color/text_light_gray2"
+                    android:textSize="16sp"
+                    android:visibility="visible"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/shape_bottom_radius_white_bg"
+        android:gravity="center"
+        android:padding="42dip"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvCamera"
+            android:text="打开相机"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_rect_angle_sky_blue_bg"
+            android:padding="20dip"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="24dip"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvGallery"
+            android:text="打开图库"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_rect_angle_sky_blue_bg"
+            android:padding="20dip"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dip"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
