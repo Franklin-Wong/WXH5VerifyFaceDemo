@@ -1,12 +1,11 @@
-package com.integration.project.service;
+package com.example.network;
 
-import android.os.Handler;
 
+import com.example.network.utils.Constants;
+import com.example.network.utils.LogUtils;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.integration.project.utils.Constants;
-import com.integration.project.utils.LogUtils;
 
 import java.lang.reflect.Proxy;
 import java.util.concurrent.TimeUnit;
@@ -22,22 +21,22 @@ import rx.android.BuildConfig;
 /**
  * Created by Wongerfeng on 2020/8/10.
  */
-public class ServiceManager implements IHttpService{
+public class HttpManager implements IHttpService {
     private static final String TAG = "gonghui";
     public static final long CONNECTION_TIME_OUT = 60;
     private Retrofit mRetrofit;
     /**
      * 单一实例
      */
-    private static ServiceManager mSInstance;
+    private static HttpManager mSInstance;
 
-    public static ServiceManager getInstance() {
+    public static HttpManager getInstance() {
         return InstanceHolder.getInstance();
     }
 
     static class InstanceHolder {
-        static ServiceManager getInstance() {
-            return mSInstance = new ServiceManager();
+        static HttpManager getInstance() {
+            return mSInstance = new HttpManager();
         }
     }
 

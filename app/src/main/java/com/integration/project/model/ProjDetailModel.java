@@ -1,5 +1,6 @@
 package com.integration.project.model;
 
+import com.example.network.HttpManager;
 import com.integration.project.listener.OnRequestListener;
 import com.integration.project.request.RequestDownloadFile;
 import com.integration.project.service.BaseFileObserver;
@@ -23,11 +24,12 @@ public class ProjDetailModel implements IProjDetailModel {
 
     @Override
     public void downloadContract(String url, String destDir, String fileName, OnRequestListener<File> listener){
+
         //创建文件路径
 //        String path = Environment.getExternalStorageDirectory() + "/DOWNLOAD/" + "我的合同文本.pdf";
 
         //創建請求
-       ServiceManager.getInstance()
+       HttpManager.getInstance()
                 .getServiceByClass(RequestDownloadFile.class).downloadFile(url).map(new Function<ResponseBody, File>() {
            @Override
            public File apply(ResponseBody responseBody) throws Exception {
